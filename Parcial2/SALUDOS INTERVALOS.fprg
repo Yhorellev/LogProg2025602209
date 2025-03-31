@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="SALUDOS INTERVALOS"/>
+        <attribute name="authors" value="Yhorelle Velazquez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-31 02:24:53 p. m."/>
+        <attribute name="created" value="WWhvcmVsbGUgVmVsYXpxdWV6O0RFU0tUT1AtNjVLMjJKSTsyMDI1LTAzLTMxOzAyOjA0OjEwIHAuIG0uOzQzMDI="/>
+        <attribute name="edited" value="WWhvcmVsbGUgVmVsYXpxdWV6O0RFU0tUT1AtNjVLMjJKSTsyMDI1LTAzLTMxOzAyOjI0OjUzIHAuIG0uOzE7NDQxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <assign variable="Edad" expression="0"/>
+            <input variable="Edad"/>
+            <if expression="Edad=0 AND Edad&lt;11">
+                <then>
+                    <output expression="&quot;Holi&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad&gt;=12 AND Edad&lt;=18">
+                        <then>
+                            <output expression="&quot;Que onda&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Edad&gt;=19 AND Edad&lt;=26">
+                                <then>
+                                    <output expression="&quot;Que pex&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Edad&gt;=27 AND Edad&lt;=59">
+                                        <then>
+                                            <output expression="&quot;Buenas Tardes&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Edad&gt;60">
+                                                <then>
+                                                    <output expression="&quot;Hola Cadaver&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
