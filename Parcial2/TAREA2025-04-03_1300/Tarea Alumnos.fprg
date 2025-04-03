@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea Alumnos"/>
+        <attribute name="authors" value="Yhorelle Velazquez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 11:30:45 p. m."/>
+        <attribute name="created" value="WWhvcmVsbGUgVmVsYXpxdWV6O0RFU0tUT1AtNjVLMjJKSTsyMDI1LTA0LTAyOzEwOjQ1OjM5IHAuIG0uOzQzMTY="/>
+        <attribute name="edited" value="WWhvcmVsbGUgVmVsYXpxdWV6O0RFU0tUT1AtNjVLMjJKSTsyMDI1LTA0LTAyOzExOjMwOjQ1IHAuIG0uOzE7NDQxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Alumnos" type="String" array="False" size=""/>
+            <assign variable="Alumnos" expression="&quot;&quot;"/>
+            <declare name="Genero" type="String" array="False" size=""/>
+            <assign variable="Genero" expression="&quot;&quot;"/>
+            <output expression="&quot;Ingrese Inicial de su Nombre&quot;" newline="True"/>
+            <input variable="Alumnos"/>
+            <output expression="&quot;Ingrese su genero&quot;" newline="True"/>
+            <input variable="Genero"/>
+            <if expression="Genero==&quot;Mujer&quot; AND Alumnos&lt;=&quot;M&quot; OR Genero==&quot;Hombre&quot; AND Alumnos&gt;=&quot;N&quot;">
+                <then>
+                    <output expression="&quot;Grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Grupo B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
