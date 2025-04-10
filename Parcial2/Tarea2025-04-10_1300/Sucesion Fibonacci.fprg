@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Sucesion Fibonacci"/>
+        <attribute name="authors" value="Yhorelle Velazquez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 07:53:10 a. m."/>
+        <attribute name="created" value="WWhvcmVsbGUgVmVsYXpxdWV6O0RFU0tUT1AtNjVLMjJKSTsyMDI1LTA0LTEwOzA3OjM3OjAzIGEuIG0uOzQyOTg="/>
+        <attribute name="edited" value="WWhvcmVsbGUgVmVsYXpxdWV6O0RFU0tUT1AtNjVLMjJKSTsyMDI1LTA0LTEwOzA3OjUzOjEwIGEuIG0uOzE7NDQwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <declare name="D" type="Integer" array="False" size=""/>
+            <declare name="E" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="1"/>
+            <assign variable="B" expression="1"/>
+            <assign variable="C" expression="1"/>
+            <assign variable="D" expression="0"/>
+            <output expression="&quot;Inggrese el Numero de Elementos&quot;" newline="True"/>
+            <input variable="A"/>
+            <for variable="E" start="1" end="A" direction="inc" step="1">
+                <assign variable="B" expression="D+C"/>
+                <assign variable="D" expression="C"/>
+                <assign variable="C" expression="B"/>
+                <output expression="B" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
